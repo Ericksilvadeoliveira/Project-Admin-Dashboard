@@ -1,3 +1,4 @@
+
 :root {
     --background: white;
     --back-content: #E2E8F0;
@@ -15,7 +16,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     background-color: var(--background);
 }
 
@@ -23,19 +24,85 @@
     grid-column: 2 / 3;
 }
 
-.header .header-area1 {
+.header-area1 {
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 2fr;
+    justify-items: stretch;
+    align-items: center;
+    padding: 15px;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+}
+
+.input input {
+    background-color: var(--back-content);
+    border: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    width: 90%;
+}
+
+.notf {
+    justify-self: end;
+    padding-right: 22px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.perfil {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+.perfil-img {
+    width: 40px;
+    height: 40px;
 }
 
 .header .header-area2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-columns: 2fr 5fr;
+    padding: 15px;
 }
 
-.header-area2 .btns {
+.perfil-hello {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.perfil-hello p:nth-child(1) {
+    font-size: 12px;
+}
+
+.btns {
+    width: 200px;
+    justify-self: center;
+    padding-left: 150px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    gap: 40px;
+}
+
+.btns button {
+    background-color: var(--sidebar);
+    border: transparent;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    color: var(--font-color2);
+    font-weight: bold;
 }
 
 .sidebar {
@@ -57,24 +124,33 @@
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
     gap: 20px;
     padding: 0px 0px 20px 20px;
 }
 
-.project-title {
-    height: 10px;
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 1 / 3;
+    display: grid;
+    align-items: end;
 }
+
 .projects-area p {
     grid-column: 1 / 3;
 }
 
 .project-content {
-    width: 250px;
+    width: 350px;
     background-color: var(--background);
+    padding: 5px;
+    border-radius: 10px;
+    border-left: 9px solid var(--border);
 }
 
 .project-content h1 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .project-content p {
