@@ -251,18 +251,34 @@
     display: grid;
 }
 
-.t-trending {
+.content-area {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 15px;
+}
+.trending-area p:nth-child(1) {
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .trending-content {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: 5px;
+    
 }
 
 .trending-content p {
-    grid-column: 2 / 3;
     font-size: 12px;
+    display: grid;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.trending-content strong {
+    font-size: 18px;
 }
